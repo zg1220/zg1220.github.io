@@ -3,23 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>L.Z.G</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <scriptsrc="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("btn-test").click(function{alert("Hi");});
+      })
+    </script>
   </head>
   <body>
-
       <header>
-        <h1>我来了</h1>
-        <p>website</p>
+   <!--      <h1>我来了</h1>
+        <p>website</p> -->
       </header>
       <section>
-        <P>记得更新我</P>
+        <div class="container">
+          <div class="row">
+            <button type="button" id="btn-test" class="btn btn-primary">click here</button>
+          </div>
+          <div class="row">
+            <div class="col">
+              left
+            </div>
+            <div class="col">
+              right
+            </div>
+          </div>
+        </div>
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">我也不知道说啥了</div>
       </section>
       <footer>
         <p><small><a href="#">我走了</a></small></p>
-      </footer>    
+      </footer>
   </body>
 </html>
